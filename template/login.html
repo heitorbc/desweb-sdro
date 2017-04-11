@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SDRO - CBMES</title>
+	<link rel="stylesheet" type="text/css" href="css/login_style.css">
+
+</head>
+
+<body>
+	
+	<div class="corpo">
+		<header>
+			<figure class="html5" id="logo">
+				<img src="images/rocket.png" alt="Logo SDRO" title="Logo SDRO" width="40" height="40" />
+			</figure>
+			<h1 id="nomeSistema">SDRO-CBMES</h1>
+		</header>
+		
+		<nav>
+
+			<div class="login-page">
+				<div class="form">
+				<h2>Login</h2>
+					<form class="login-form" method="POST" action="">
+						<label >Usuário:</label>
+						<input type="text" placeholder="usuário" name="usuario-login" required/>
+						<label >Senha:</label>
+						<input type="password" placeholder="senha" name="senha-login" required/>
+						<button class="botao" formaction="inicial.html" onclick="usuario()">Entrar</button>
+						<p class="message"><a href="recupera_senha.html">Esqueceu sua senha?</a></p>
+						<p class="message"><a href="cadastro.html">Cadastre-se</a></p>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<script type="text/javascript" src="js/form.js"></script>
+</body>
+
+</html>
+
+

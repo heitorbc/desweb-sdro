@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SDRO - CBMES</title>
+	<link rel="stylesheet" type="text/css" href="css/login_style.css">
+
+</head>
+
+<body>
+	
+	<div class="corpo">
+		<header>
+			<figure class="html5" id="logo">
+				<img src="images/rocket.png" alt="Logo SDRO" title="Logo SDRO" width="40" height="40" />
+			</figure>
+			<h1 id="nomeSistema">SDRO-CBMES</h1>
+		</header>
+		
+		<nav>
+
+			<div class="login-page">
+				<div class="form">
+					<h2>Cadastro</h2>
+					<form class="login-form" method="POST" action="#" id="cadastro">
+						<div class="grupo">
+							<label >Usuário:</label>
+							<input type="text" placeholder="usuario" id="usuario" name="usuario" required />
+						</div>
+						<div class="grupo">
+							<label >Senha:</label>
+							<input type="password" placeholder="senha" id="senha" name="senha" required/>
+							<span class="msg-erro msg-senha"></span>
+						</div>
+						<div class="grupo">
+							<label >Repetir senha:</label>
+							<input type="password" placeholder="senha" id="senha2" name="senha2" required/>
+							<span class="msg-erro msg-senha2"></span>
+						</div>
+						<div class="grupo">
+						<label >Email:</label>
+						<input id="email" type="email" placeholder="email" id="email" name="email" required/>
+						</div>
+						<button class="botao" >Criar</button>
+						<br>
+						<p class="message"><a href="login.html">Já Possuo Login </a></p>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<script type="text/javascript" src="js/form.js"></script>
+</body>
+
+</html>
+
+

@@ -1,0 +1,125 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>SDRO - CBMES</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+	</head>
+
+	<body>
+		<header>
+
+			<figure class="html5" id="logo">
+				<img src="images/rocket.png" alt="Logo SDRO" title="Logo SDRO" width="40" height="40" />
+			</figure>
+			<h1 id="nomeSistema">SDRO-CBMES</h1>
+			<div id="user">
+				<span id="usuario">
+				</span>
+				<a href="login.html">sair</a>			
+			</div>
+
+		</header>
+
+		<nav>
+			<div class="menu">
+				<ul>
+					<li class="menu-item"><a href="inicial.html">Início</a></li>
+					<li class="menu-item dropdown">
+						<a href="" class="dropbtn">Cadastrar</a>
+						<div class="dropdown-content">
+							<a href="lista_viaturas.html">Viatura</a>
+							<a href="lista_pessoas.html">Pessoa</a>
+							<a href="lista_unidades.html">Unidade</a>
+						</div>
+					</li>
+					<li class="menu-item dropdown">
+						<a href="" class="dropdown">Alocar</a>
+						<div class="dropdown-content">
+							<a href="aloca_equipe.html">Equipe</a>
+							<a href="alocaefetivo_disp.html">Efetivo Disponível</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+
+		</nav>
+
+		<div class="conteiner">
+			<h2 class="titulo-principal">Lista de Viaturas</h2>
+
+			<table class="table-listar">
+
+				<thead>
+					<tr>
+
+						<th>Prefixo</th>
+						<th>Tipo</th>
+						<th>Unidade</th>
+						<th>Status</th>
+						<th>Ações</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+
+						<td><a href="">AR 001</a></td>
+						<td>OPERACIONAL RESGATE</td>
+						<td>1BBM/1CIA</td>
+						<td>Indisponivel</td>
+						<td><a href="cad_viatura.html"><i class="material-icons">edit</i></a>  <a href="javascript:func()" onclick="confirmacao('1')"><i class="material-icons">delete</i></a></td>
+					</tr>
+					<tr>
+
+						<td><a href="">ABTS 001</a></td>
+						<td> OPERACIONAL ABTS</td>
+						<td>1BBM/2CIA</td>
+						<td>Disponível</td>
+						<td><a href="cad_viatura.html"><i class="material-icons">edit</i></a>  <a href="javascript:func()" onclick="confirmacao('1')"><i class="material-icons">delete</i></a></td>
+					</tr>
+					<tr>
+
+						<td> <a href="">ABSL 03</a></td>
+						<td>OPERACIONAL ABSL</td>
+						<td>6BBM/1CIA</td>
+						<td>Empenhada</td>
+						<td><a href="cad_viatura.html"><i class="material-icons">edit</i></a>  <a href="javascript:func()" onclick="confirmacao('1')"><i class="material-icons">delete</i></a></td>
+					</tr>
+					<tr>
+
+						<td> <a href="">MT 032</a></td>
+						<td>MOTO VISTORIA</td>
+						<td>1BBM/2CIA</td>
+						<td>Manutenção</td>
+						<td><a href="cad_viatura.html"><i class="material-icons">edit</i></a>  <a href="javascript:func()" onclick="confirmacao('1')"><i class="material-icons">delete</i></a></td>
+					</tr>
+					<tr>
+
+						<td><a href="">ABT 001</a></td>
+						<td>OPERACIONAL AUTO TANQUE</td>
+						<td>1BBM/1CIA</td>
+						<td>Outros</td>
+						<td><a href="cad_viatura.html"><i class="material-icons">edit</i></a>  <a href="javascript:func()" onclick="confirmacao('1')"><i class="material-icons">delete</i></a></td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+		<a href="cad_viatura.html" class="adicionar"><i class="fa fa-plus"></i></a>
+
+		<footer>
+			<div class="footer-text">
+				CORPO DE BOMBEIROS MILITAR DO ESPÍRITO SANTO (CBMES) <br>Rua Ten. Mário Francisco de Brito, 100 - Enseada do Suá CEP: 29050-555 - Vitória / ES
+			</div>
+		</footer>
+	<script type="text/javascript" src="js/form.js"></script>
+	</body>
+
+	</html>
+
+

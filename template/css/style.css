@@ -1,0 +1,333 @@
+h1,h2, figure, header, nav, body{
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+
+}
+
+button{
+	border: 0px;
+}
+
+input{
+	border 1px;
+}
+ul , li, a{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+header{
+	height: 50px;
+	background-color:  #c62828;
+	width: 100%;
+	font-family: verdana;
+}
+
+header figure{
+	position: relative;
+	float: left;
+}
+
+header a{
+	color: black;
+}
+
+header a:hover{
+	text-decoration: underline;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #c62828;
+	border-bottom: 1px solid #757575;
+}
+
+nav li {
+	float: left;
+}
+
+nav li a, .dropbtn {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	min-width: 150px;
+	font-family: verdana;
+}
+
+nav li a:hover, .dropdown:hover .dropbtn {
+	background-color: #b71c1c ;
+}
+
+nav li.dropdown {
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 14px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+
+footer{
+	bottom: 0;
+	height: 50px;
+	background-color: #b71c1c;
+	width: 100%;
+	clear: both;
+}
+
+.required:after {
+	content:" *"; 
+	color: red;
+}
+
+#user{
+	position: relative;
+	float: right;
+	padding-top: 15px;
+	padding-right: 30px;
+}
+
+#user a{
+	margin-left: 15px;
+}
+
+#nomeSistema{
+	position: relative;
+	float: left;
+	margin-left: 10px;
+	margin-top: 15px;
+	color: #212121;
+}
+
+#logo{
+	padding-top: 5px;
+	padding-left: 10px;
+}
+
+.footer-text {
+	color: white;
+	font-family: verdana;
+	padding-right: 5px;
+	padding-top: 5px;
+	font-size: 0.9em;
+	text-align: center;
+}
+
+body{
+	background-color: #eeeeee;
+}
+
+
+
+.conteiner{
+	width: 75%;
+	margin: 30px auto 5px auto;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 2px 3px 2px 2px rgba(0,0,0,0.2);
+	
+}
+
+.titulo-principal{
+	font-family: verdana;
+	text-align: center;
+	padding: 20px 0;
+	font-size:1.5em;
+}
+
+.form-cadastro{
+	width: 85%;
+	margin: 0 auto;
+
+}
+
+.form-cadastro label{
+	font-family: verdana;
+	font-size: 0.8em;
+	display: inline-block;
+	width: 90%;
+	font-weight: bold;
+	text-align: left;
+}
+
+.form-cadastro input, select{
+	width: 170px;
+}
+
+.tabela-cadastro{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.tabela-cadastro td{
+	padding: 10px 0;
+	
+}
+
+.botao{
+	background: #f44336;
+	width: 25%;
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	padding: 15px;
+	color: #FFFFFF;
+	font-size: 14px;
+	margin: 0 auto;
+}
+
+.botao:hover{
+	background-color: #b71c1c ;
+}
+
+.table-listar {
+	background: white;
+	border-radius:3px;
+	border-collapse: collapse;
+	height: 320px;
+	margin: auto;
+
+	padding:5px;
+	width: 95%;
+	text-align: center;
+
+}
+
+.table-listar th{
+	text-align: center;
+	font-family: verdana;
+	color:#666B85;
+	font-size:0.9em;
+	padding:10px;
+	vertical-align:middle;
+	border-bottom: 1px solid #C1C3D1;
+}
+
+.table-listar tr {
+	font-family: verdana;
+	color:#666B85;
+	font-size:1.0em;
+	font-weight:normal;
+	
+}
+
+.table-listar tr:hover td {
+	background:#ffebee;
+}
+
+.table-listar td {
+	font-family: verdana;
+	background:#FFFFFF;
+	padding:5px;
+	text-align:center;
+	vertical-align:middle;
+	font-weight:300;
+	font-size:0.9em;
+
+}
+
+.table-listar a{
+	color:#666B85;
+}
+
+.table-listar a:hover {
+	text-decoration: underline;
+
+}
+
+.table-listar i:hover{
+	color:black;
+}
+
+.table-listar input{
+	width: 20px;
+	height: 20px;
+}
+
+.adicionar{
+	float: right;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	margin-right: 70px;
+	margin-bottom: 30px;
+	background-color: #9e9e9e;
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+	text-align: center;
+}
+
+.adicionar:hover{
+	box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.2);
+}
+
+.adicionar i{
+	color: white;
+	font-size: 1.3em;
+	padding-top: 20px;
+	vertical-align: middle;
+}
+
+.add-mil i{
+	font-size: 25px;
+	padding-right: 4px;
+}	
+
+.form button:hover,.form button:active,.form button:focus {
+  background: #b71c1c ;
+}
+
+.acoes{
+	width: 100px;
+}
+
+.conteiner-botao{
+	width: 100%;
+	text-align: center;
+}
+.conteiner-botao button{
+	margin: 10px;
+}
+
+.canvas{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+
+}
+.canvas-mapa{
+
+	padding-left: 0px;
+
+}
+

@@ -1,0 +1,117 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>SDRO - CBMES</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<body>
+		<header>
+
+			<figure class="html5" id="logo">
+				<img src="images/rocket.png" alt="Logo SDRO" title="Logo SDRO" width="40" height="40" />
+			</figure>
+			<h1 id="nomeSistema">SDRO-CBMES</h1>
+			<div id="user">
+				<span id="usuario">
+				</span>
+				<a href="login.html">sair</a>			
+			</div>
+
+		</header>
+
+		<nav>
+			<div class="menu">
+				<ul>
+					<li class="menu-item"><a href="inicial.html">Início</a></li>
+					<li class="menu-item dropdown">
+						<a href="" class="dropbtn">Cadastrar</a>
+						<div class="dropdown-content">
+							<a href="lista_viaturas.html">Viatura</a>
+							<a href="lista_pessoas.html">Pessoa</a>
+							<a href="lista_unidades.html">Unidade</a>
+						</div>
+					</li>
+					<li class="menu-item dropdown">
+						<a href="" class="dropdown">Alocar</a>
+						<div class="dropdown-content">
+							<a href="aloca_equipe.html">Equipe</a>
+							<a href="alocaefetivo_disp.html">Efetivo Disponível</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+
+		</nav>
+
+		<div class="conteiner">
+			<h2 class="titulo-principal">Lista de unidades</h2>
+
+			<table class="table-listar">
+
+				<thead>
+					<tr>
+						<th>Abreviação</th>
+						<th>Nome</th>
+						<th>Cidade</th>
+						<th>Ações</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+
+						<td><a href="">1ºBBM/1ªCIA</a></td>
+						<td>1ª Companhia do 1º Batalhão de Bombeiros</td>
+						<td>Vitoria</td>
+						<td><a href="cad_unidade.html"><i class="material-icons">edit</i></a>  <a href="javascript:func()" onclick="confirmacao('1')"><i class="material-icons">delete</i></a></td>
+					</tr>
+					<tr>
+
+						<td><a href="">1ºBBM/2ªCIA</a></td>
+						<td>2ª Companhia do 1º Batalhão de Bombeiros</td>
+						<td>Vila Velha</td>
+						<td><a href="cad_unidade.html"><i class="material-icons">edit</i></a>  <a href="javascript:func()" onclick="confirmacao('1')"><i class="material-icons">delete</i></a></td>
+					</tr>
+					<tr>
+
+						<td> <a href="">6ºBBM/1ªCIA</a></td>
+						<td>1ª Companhia do 6º Batalhão de Bombeiros</td>
+						<td>Cariacica</td>
+						<td><a href="cad_unidade.html"><i class="material-icons">edit</i></a>  <a href="javascript:func()" onclick="confirmacao('1')"><i class="material-icons">delete</i></a></td>
+					</tr>
+					<tr>
+
+						<td> <a href="">6ºBBM/2ªCIA</a></td>
+						<td>1ª Companhia do 6º Batalhão de Bombeiros</td>
+						<td>Serra</td>
+						<td><a href="cad_unidade.html"><i class="material-icons">edit</i></a>  <a href="javascript:func()" onclick="confirmacao('1')"><i class="material-icons">delete</i></a></td>
+					</tr>
+					<tr>
+
+						<td><a href="">2ª CIA IND</a></td>
+						<td>2ª Companhia Independente</td>
+						<td>Aracruz</td>
+						<td><a href="cad_unidade.html"><i class="material-icons">edit</i></a>  <a href="javascript:func()" onclick="confirmacao('1')"><i class="material-icons">delete</i></a></td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+		<a href="cad_unidade.html" class="adicionar"><i class="fa fa-plus"></i></a>
+
+		<footer>
+			<div class="footer-text">
+				CORPO DE BOMBEIROS MILITAR DO ESPÍRITO SANTO (CBMES) <br>Rua Ten. Mário Francisco de Brito, 100 - Enseada do Suá CEP: 29050-555 - Vitória / ES
+			</div>
+		</footer>
+	<script type="text/javascript" src="js/form.js"></script>
+	</body>
+
+	</html>
+
+

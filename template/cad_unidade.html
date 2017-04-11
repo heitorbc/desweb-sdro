@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SDRO - CBMES</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<header>
+
+		<figure class="html5" id="logo">
+			<img src="images/rocket.png" alt="Logo SDRO" title="Logo SDRO" width="40" height="40" />
+		</figure>
+		<h1 id="nomeSistema">SDRO-CBMES</h1>
+		<div id="user">
+			<span id="usuario">
+			</span>
+			<a href="login.html">sair</a>			
+		</div>
+
+	</header>
+
+	<nav>
+		<div class="menu">
+			<ul>
+				<li class="menu-item"><a href="inicial.html">Início</a></li>
+				<li class="menu-item dropdown">
+					<a href="" class="dropbtn">Cadastrar</a>
+					<div class="dropdown-content">
+						<a href="lista_viaturas.html">Viatura</a>
+						<a href="lista_pessoas.html">Pessoa</a>
+						<a href="lista_unidades.html">Unidade</a>
+					</div>
+				</li>
+				<li class="menu-item dropdown">
+					<a href="" class="dropdown">Alocar</a>
+					<div class="dropdown-content">
+						<a href="aloca_equipe.html">Equipe</a>
+						<a href="alocaefetivo_disp.html">Efetivo Disponível</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+
+	</nav>
+
+	<div class="conteiner">
+		<h2 class="titulo-principal">Cadastrar Unidade</h2>
+
+		<form class="form-cadastro" method="POST" action="#">
+			<table class="tabela-cadastro">
+				<tr>
+					<td>
+						<label class="required">Nome:</label>
+					</td>
+					<td>
+						<input name="nome"  required/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label class="required">Abreviação:</label>
+					</td>
+					<td>
+						<input name="abreviacao" required/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<label>Unidade a que pertence:</label>
+					</td>
+					<td>
+						<select name="tipo" class="select">
+							<option value="">selecionar unidade</option>
+							<option value="opcao1">opcao 1</option>
+							<option value="opcao2">opcao 2</option>
+						</select>	
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<label class="required">Telefone COBOM:</label>
+					</td>
+					<td>
+						<input name="telefonecobom" required/>
+					</td>
+				</tr>					
+
+				<tr>
+					<td>
+						<label class="required"	>CEP:</label>
+					</td>
+					<td>
+						<input name="cep" required/>
+					</td>
+				</tr>	
+				<tr>
+					<td>
+						<label class="required">Logradouro:</label>
+					</td>
+					<td>
+						<input name="logradouro" required/>
+					</td>
+				</tr>	
+				<tr>
+					<td>
+						<label class="required">Bairro:</label>
+					</td>
+					<td>
+						<input name="bairro" required/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label class="required">Cidade:</label>
+					</td>
+					<td>
+						<select name="cidade" class="select" required>
+							<option value="">selecionar cidade</option>
+							<option value="opcao1">opcao 1</option>
+							<option value="opcao2">opcao 2</option>
+						</select>	
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label class="required">Comandante:</label>
+					</td>
+					<td>
+						<select name="comandante" class="select" required>
+							<option value="">selecionar comandante</option>
+							<option value="opcao1">opcao 1</option>
+							<option value="opcao2">opcao 2</option>
+						</select>	
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label class="required">Subcomandante:</label>
+					</td>
+					<td>
+						<select name="subcomandante" class="select" required>
+							<option value="">selecionar subcomandante</option>
+							<option value="opcao1">opcao 1</option>
+							<option value="opcao2">opcao 2</option>
+						</select>	
+					</td>
+				</tr>
+			</table>
+			<div class="conteiner-botao">
+				<button class="botao" >Cadastrar</button>
+			</div>
+		</form>
+	</div>
+
+
+	<footer>
+		<div class="footer-text">
+			CORPO DE BOMBEIROS MILITAR DO ESPÍRITO SANTO (CBMES) <br>Rua Ten. Mário Francisco de Brito, 100 - Enseada do Suá CEP: 29050-555 - Vitória / ES
+		</div>
+	</footer>
+<script type="text/javascript" src="js/form.js"></script>
+</body>
+
+</html>
+
+

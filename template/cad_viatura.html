@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SDRO - CBMES</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<header>
+
+		<figure class="html5" id="logo">
+			<img src="images/rocket.png" alt="Logo SDRO" title="Logo SDRO" width="40" height="40" />
+		</figure>
+		<h1 id="nomeSistema">SDRO-CBMES</h1>
+		<div id="user">
+			<span id="usuario">
+			</span>
+			<a href="login.html">sair</a>			
+		</div>
+
+	</header>
+
+	<nav>
+		<div class="menu">
+			<ul>
+				<li class="menu-item"><a href="inicial.html">Início</a></li>
+				<li class="menu-item dropdown">
+					<a href="" class="dropbtn">Cadastrar</a>
+					<div class="dropdown-content">
+						<a href="lista_viaturas.html">Viatura</a>
+						<a href="lista_pessoas.html">Pessoa</a>
+						<a href="lista_unidades.html">Unidade</a>
+					</div>
+				</li>
+				<li class="menu-item dropdown">
+					<a href="" class="dropdown">Alocar</a>
+					<div class="dropdown-content">
+						<a href="aloca_equipe.html">Equipe</a>
+						<a href="alocaefetivo_disp.html">Efetivo Disponível</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+
+	</nav>
+
+	<div class="conteiner">
+		<h2 class="titulo-principal">Cadastrar Viatura</h2>
+
+		<form class="form-cadastro" method="POST" action="#">
+			<table class="tabela-cadastro">
+				<tr>
+					<td>
+						<label>Unidade:</label>
+					</td>
+					<td>
+						<select name="unidade" class="select" required>
+							<option value="">Selecione a unidade</option>
+						</select>	
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Prefixo:</label>
+					</td>
+					<td>
+						<input name="prefixo" required/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label >Tipo:</label>
+					</td>
+					<td>
+						<select name="tipo" class="select" required>
+							<option value="">Selecione um tipo</option>
+						</select>	
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label >Categoria:</label>
+					</td>
+					<td>
+						<select name="categoria" class="select" required>
+							<option value="">Selecione uma categoria</option>
+						</select>	
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label >Ano:</label>
+					</td>
+					<td>
+						<select name="ano" class="select" required>
+							<option value="">Selecione o ano</option>
+						</select>	
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Marca:</label>
+					</td>
+					<td>
+						<input name="marca" required/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label >Placa:</label>
+					</td>
+					<td>
+						<input name="placa" required>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label >Capacidade de água:</label>
+					</td>
+					<td>
+						<input name="capacidade" required />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label >Tipo:</label>
+					</td>
+					<td>
+						<select name="tipo" class="select" required>
+							<option value="" >Selecione um tipo</option>
+						</select>	
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<label >Combustível:</label>
+					</td>
+					<td>
+						<input name="combustivel" required />	
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label >Quilometragem inicial:</label>
+					</td>
+					<td>
+						<input name="quilometragem" required/>
+					</td>
+				</tr>
+			</table>
+			<div class="">
+			<div class="conteiner-botao">
+				<button class="botao" >Cadastrar</button>
+			</div>
+			</div>
+		</form>
+	</div>
+
+
+	<footer>
+		<div class="footer-text">
+			CORPO DE BOMBEIROS MILITAR DO ESPÍRITO SANTO (CBMES) <br>Rua Ten. Mário Francisco de Brito, 100 - Enseada do Suá CEP: 29050-555 - Vitória / ES
+		</div>
+	</footer>
+<script type="text/javascript" src="js/form.js"></script>
+</body>
+
+</html>
+
+

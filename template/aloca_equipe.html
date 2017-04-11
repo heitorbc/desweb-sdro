@@ -1,0 +1,133 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>SDRO - CBMES</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<body>
+		<header>
+
+			<figure class="html5" id="logo">
+				<img src="images/rocket.png" alt="Logo SDRO" title="Logo SDRO" width="40" height="40" />
+			</figure>
+			<h1 id="nomeSistema">SDRO-CBMES</h1>
+			<div id="user">
+				<span id="usuario">
+				</span>
+				<a href="login.html">sair</a>			
+			</div>
+
+		</header>
+
+		<nav>
+			<div class="menu">
+				<ul>
+					<li class="menu-item"><a href="inicial.html">Início</a></li>
+					<li class="menu-item dropdown">
+						<a href="" class="dropbtn">Cadastrar</a>
+						<div class="dropdown-content">
+							<a href="lista_viaturas.html">Viatura</a>
+							<a href="lista_pessoas.html">Pessoa</a>
+							<a href="lista_unidades.html">Unidade</a>
+						</div>
+					</li>
+					<li class="menu-item dropdown">
+						<a href="" class="dropdown">Alocar</a>
+						<div class="dropdown-content">
+							<a href="aloca_equipe.html">Equipe</a>
+							<a href="alocaefetivo_disp.html">Efetivo Disponível</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+
+		</nav>
+
+		<div class="conteiner">
+			<h2 class="titulo-principal">Equipes de Serviço</h2>
+
+			<table class="table-listar">
+
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Descrição</th>
+						<th>Data Turno</th>
+						<th>Previsão Término</th>
+						<th>Modalidade</th>
+						<th>Chefe</th>
+						<th>Ações</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td><a href="">Resgate 1</a></td>
+						<td>01/03/2017 07:00</td>
+						<td>02/03/2017 07:00</td>
+						<td>Atendimento Pré-Hospitalar</td>
+						<td >3º Sgt BM Pereira</td>
+						<td class="acoes">  <a href="cad_equipe.html"><i class="material-icons">edit</i></a> <a href="javascript:func()" onclick="confirmacao('2')" class="add-mil"><i class="fa fa-minus-square-o" ></i></a>   <input type="checkbox"></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td><a href="">ABTS 1</a></td>
+						<td>01/03/2017 07:00</td>
+						<td>02/03/2017 07:00</td>
+						<td>Combate a Incêndio</td>
+						<td >2º Sgt BM GLalber</td>
+						<td class="acoes"> <a href="cad_equipe.html"><i class="material-icons">edit</i></a> <a href="javascript:func()" onclick="confirmacao('2')" class="add-mil"><i class="fa fa-minus-square-o" ></i></a>   <input type="checkbox"></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td><a href="">Chefe de Operações GV</a></td>
+						<td>01/03/2017 07:00</td>
+						<td>02/03/2017 07:00</td>
+						<td>Cordenação GV</td>
+						<td >Cap BM Alfredo</td>
+						<td class="acoes"> <a href="cad_equipe.html"><i class="material-icons">edit</i></a> <a href="javascript:func()" onclick="confirmacao('2')" class="add-mil"><i class="fa fa-minus-square-o" ></i></a>   <input type="checkbox"></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td><a href="">Mergulho GV</a></td>
+						<td>01/03/2017 08:00</td>
+						<td>01/03/2017 19:00</td>
+						<td>Mergulho/Salvamento Aquático</td>
+						<td >Cb BM Pedra</td>
+						<td class="acoes"> 
+							<a href="cad_equipe.html">
+								<i class="material-icons">edit</i>
+							</a> 
+							<a href="javascript:func()" onclick="confirmacao('2')" class="add-mil">
+								<i class="fa fa-minus-square-o" ></i>
+							</a>
+							<input type="checkbox">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="conteiner-botao">
+				<button class=" botao">Desalocar TODOS</button>
+				<button class=" botao"> Desalocar selecionados</button>
+			</div>
+			
+		</div>
+		<a href="cad_equipe.html" class="adicionar"><i class="fa fa-plus"></i></a>
+
+		<footer>
+			<div class="footer-text">
+				CORPO DE BOMBEIROS MILITAR DO ESPÍRITO SANTO (CBMES) <br>Rua Ten. Mário Francisco de Brito, 100 - Enseada do Suá CEP: 29050-555 - Vitória / ES
+			</div>
+		</footer>
+	<script type="text/javascript" src="js/form.js"></script>
+	</body>
+
+	</html>
+
+

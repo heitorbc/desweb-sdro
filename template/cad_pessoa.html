@@ -59,6 +59,8 @@
 					<td>
 						<select name="unidade" class="select" required>
 							<option value="">Selecione a unidade</option>
+							<option value="unidadea">Unidade A</option>
+							<option value="unidadeb">Unidade b</option>
 						</select>	
 					</td>
 				</tr>
@@ -77,6 +79,8 @@
 					<td>
 						<select name="tipo" class="select" required>
 							<option value="">Selecione Posto ou Graduação</option>
+							<option value="1">Sd BM</option>
+							<option value="2">Cb BM</option>
 						</select>	
 					</td>
 				</tr>
@@ -101,7 +105,9 @@
 						<label class="required">CPF:</label>
 					</td>
 					<td>
-						<input name="cpf" onmouseleave="validaCPF()" required/>
+						<input name="cpf" id='cpf' onmouseleave="validaCPF()"  minlength=11
+						data-mask="000.000.000-00" data-mask-selectonfocus="true"
+						placeholder="999.999.999-99" pattern="\d{3}.?\d{3}.?\d{3}-?\d{2}" required/>
 					</td>
 				</tr>
 				<tr>
@@ -109,7 +115,9 @@
 						<label class="required">Celular:</label>
 					</td>
 					<td>
-						<input name="celular" required/>
+						<input name="celular" id="cel" type="tel" minlength=11
+						data-mask="(00)00000-0000" data-mask-selectonfocus="true"
+						placeholder="(99)99999-9999" pattern="\(\d{2}\)\d{4}-\d{4}" required/>
 					</td>
 				</tr>
 			</table>
@@ -124,7 +132,8 @@
 			CORPO DE BOMBEIROS MILITAR DO ESPÍRITO SANTO (CBMES) <br>Rua Ten. Mário Francisco de Brito, 100 - Enseada do Suá CEP: 29050-555 - Vitória / ES
 		</div>
 	</footer>
-<script type="text/javascript" src="js/form.js"></script>
+	<script type="text/javascript" src="js/form.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 </body>
 
 </html>
